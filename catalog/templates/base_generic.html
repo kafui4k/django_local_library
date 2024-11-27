@@ -37,6 +37,7 @@
                     </li>
 
                     {% if user.is_staff %}
+
                         <hr>
                         <ul class="sidebar-nav">
                             <li>Staff</li>
@@ -50,6 +51,7 @@
                         </ul>
 
                     {% endif %}
+
                     
                     {% else %}
                         <li><a href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
